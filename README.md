@@ -2,7 +2,7 @@ Note for my reference:
 Command I used to run the program was: g++ -o CityClock.exe main.cpp CityClock.cpp
 and then I used ./CityClock.exe to run.
 Here is what the outcome looks like:
-PS C:\Users\Adelaida\Documents\CityClock> .\CityClock.exe   
+PS C:\Insertpathere .\CityClock.exe   
 Default Constructor - Rochester, Michigan - 00:00:00 AM
 Custom Constructor - New York - 01:35:02 PM
 After toggling format - New York - 13:35:02

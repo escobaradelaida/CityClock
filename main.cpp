@@ -8,7 +8,7 @@ int main() {
     clock1.show();
     std::cout << std::endl;
 
-    // Create a CityClock object with a specific time and city name
+    // Create a CityClock object with a specific time and city name. I chose New York.
     CityClock clock2(13, 35, 2, "New York");
     std::cout << "Custom Constructor - ";
     clock2.show();
@@ -26,43 +26,43 @@ int main() {
     clock2.show();
     std::cout << std::endl;
 
-    // Demonstrate copy constructor
+    // copy constructor
     CityClock clock3(clock2);
     std::cout << "Copy Constructor - ";
     clock3.show();
     std::cout << std::endl;
 
-    // Demonstrate move constructor
+    // move constructor
     CityClock clock4(std::move(clock3));
     std::cout << "Move Constructor - ";
     clock4.show();
     std::cout << std::endl;
 
-    // Demonstrate copy assignment operator
+    // copy assignment operator
     CityClock clock5;
     clock5 = clock2;
     std::cout << "Copy Assignment Operator - ";
     clock5.show();
     std::cout << std::endl;
 
-    // Demonstrate move assignment operator
+    // move assignment operator
     CityClock clock6;
     clock6 = std::move(clock4);
     std::cout << "Move Assignment Operator - ";
     clock6.show();
     std::cout << std::endl;
 
-    // Demonstrate type conversion function
+    // type conversion function
     std::string strClock = static_cast<std::string>(clock6);
     std::cout << "Type Conversion Function - " << strClock << std::endl;
 
-    // Demonstrate addition operator
+    // addition operator
     CityClock clock7 = clock6 + 3600; // adding one hour (3600 seconds)
     std::cout << "Addition Operator - ";
     clock7.show();
     std::cout << std::endl;
 
-    // Demonstrate ostream insertion operator
+    // ostream insertion operator
     std::cout << "Ostream Insertion Operator - " << clock7 << std::endl;
 
     return 0;

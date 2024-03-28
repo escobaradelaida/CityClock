@@ -5,11 +5,11 @@
 #include <iomanip>
 #include <string>
 #include <ctime>
-#include <sstream>
+#include <sstream> //associates a string object with a stream 
 
 class CityClock {
 private:
-    std::string* cityName;
+    std::string* cityName; // pointer to string object of cityName
     int hours;
     int minutes;
     int seconds;
@@ -22,7 +22,7 @@ public:
     CityClock(const CityClock& other); // Copy constructor
     CityClock(CityClock&& other); // Move constructor
 
-    // Destructor
+    // the Destructor
     ~CityClock();
 
     // Assignment operators
